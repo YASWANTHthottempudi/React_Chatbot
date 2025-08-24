@@ -1,0 +1,102 @@
+.Chat {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  flex-grow: 1;
+}
+
+.ChatHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  background: light-dark(rgba(255, 255, 255, 0.9), rgba(30, 41, 59, 0.9));
+  border-bottom: 1px solid light-dark(rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.1));
+  border-radius: 12px 12px 0 0;
+  flex-shrink: 0;
+}
+
+.ChatHeader h3 {
+  margin: 0;
+  color: light-dark(#1e293b, #f1f5f9);
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.ClearButton {
+  padding: 4px 8px;
+  background: linear-gradient(135deg, light-dark(#ef4444, #dc2626), light-dark(#dc2626, #b91c1c));
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 10px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px light-dark(rgba(239, 68, 68, 0.3), rgba(220, 38, 38, 0.3));
+}
+
+.ClearButton:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px light-dark(rgba(239, 68, 68, 0.4), rgba(220, 38, 38, 0.4));
+}
+
+.TypingIndicator {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 20px;
+  background: light-dark(rgba(255, 255, 255, 0.8), rgba(30, 41, 59, 0.8));
+  border-radius: 12px;
+  margin: 8px 16px;
+  font-size: 14px;
+  color: light-dark(#64748b, #94a3b8);
+  animation: fadeIn 0.3s ease-out;
+  flex-shrink: 0;
+}
+
+.TypingDots {
+  display: flex;
+  gap: 4px;
+}
+
+.TypingDots span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: light-dark(#3b82f6, #60a5fa);
+  animation: typing 1.4s infinite ease-in-out;
+}
+
+.TypingDots span:nth-child(1) {
+  animation-delay: -0.32s;
+}
+
+.TypingDots span:nth-child(2) {
+  animation-delay: -0.16s;
+}
+
+@keyframes typing {
+  0%, 80%, 100% {
+    transform: scale(0.8);
+    opacity: 0.5;
+  }
+  40% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

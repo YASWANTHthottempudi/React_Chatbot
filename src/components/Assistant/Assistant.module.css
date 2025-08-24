@@ -1,0 +1,57 @@
+.Assistant {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  background: light-dark(rgba(255, 255, 255, 0.8), rgba(30, 41, 59, 0.8));
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+  border: 1px solid light-dark(rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.1));
+  box-shadow: 0 2px 8px light-dark(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2));
+  transition: all 0.3s ease;
+}
+
+.Assistant:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px light-dark(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.3));
+}
+
+.Assistant span {
+  font-weight: 600;
+  color: light-dark(#1e293b, #f1f5f9);
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.Assistant select {
+  padding: 6px 8px;
+  border: 1px solid light-dark(rgba(59, 130, 246, 0.2), rgba(59, 130, 246, 0.3));
+  border-radius: 6px;
+  background: light-dark(rgba(255, 255, 255, 0.9), rgba(51, 65, 85, 0.9));
+  color: light-dark(#1e293b, #f1f5f9);
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 120px;
+}
+
+.Assistant select:focus {
+  outline: none;
+  border-color: light-dark(#3b82f6, #60a5fa);
+  box-shadow: 0 0 0 3px light-dark(rgba(59, 130, 246, 0.1), rgba(59, 130, 246, 0.2));
+}
+
+.Assistant select:hover {
+  border-color: light-dark(#3b82f6, #60a5fa);
+}
+
+.Assistant optgroup {
+  font-weight: 600;
+  color: light-dark(#64748b, #94a3b8);
+}
+
+.Assistant option {
+  padding: 8px;
+  background: light-dark(rgba(255, 255, 255, 0.95), rgba(30, 41, 59, 0.95));
+  color: light-dark(#1e293b, #f1f5f9);
+}
