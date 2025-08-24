@@ -43,27 +43,8 @@ A modern, feature-rich AI chatbot built with React that supports multiple AI pro
 - **Character Counter**: Real-time character count
 - **Auto-resize Textarea**: Dynamic input field sizing
 
-## 🚀 Quick Start
 
-### Prerequisites
-- Node.js (v16 or higher)
-- npm or yarn
-- API keys for your preferred AI providers
-
-### Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/YASWANTHthottempudi/React_Chatbot.git
-   cd React_Chatbot
-   ```
-
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
-
-3. **Set up environment variables**
+**Set up environment variables**
    Create a `.env.local` file in the root directory:
    ```env
    # Google AI (Gemini)
@@ -79,37 +60,9 @@ A modern, feature-rich AI chatbot built with React that supports multiple AI pro
    VITE_ANTHROPIC_AI_API_KEY=your_anthropic_api_key_here
    ```
 
-4. **Start the development server**
-   ```bash
-   npm run dev
-   ```
 
-5. **Open your browser**
-   Navigate to `http://localhost:5173` (or the port shown in your terminal)
 
-## 🔧 Configuration
 
-### AI Provider Setup
-
-#### Google AI (Gemini)
-1. Visit [Google AI Studio](https://makersuite.google.com/app/apikey)
-2. Create a new API key
-3. Add it to your `.env.local` file as `VITE_GOOGLE_AI_API_KEY`
-
-#### OpenAI
-1. Visit [OpenAI Platform](https://platform.openai.com/api-keys)
-2. Create a new API key
-3. Add it to your `.env.local` file as `VITE_OPEN_AI_API_KEY`
-
-#### DeepSeek AI
-1. Visit [DeepSeek AI](https://platform.deepseek.com/)
-2. Create a new API key
-3. Add it to your `.env.local` file as `VITE_DEEPSEEK_AI_API_KEY`
-
-#### Anthropic Claude
-1. Visit [Anthropic Console](https://console.anthropic.com/)
-2. Create a new API key
-3. Add it to your `.env.local` file as `VITE_ANTHROPIC_AI_API_KEY`
 
 ## 📁 Project Structure
 
@@ -163,47 +116,16 @@ react-ai-chatbot/
 - Click the "Clear" button to reset the current conversation
 - The chat history is automatically saved during your session
 
-## 🛠️ Development
 
-### Available Scripts
-
-```bash
-# Start development server
-npm run dev
-
-# Build for production
-npm run build
-
-# Preview production build
-npm run preview
-
-# Run linting
-npm run lint
-```
 
 ### Adding New AI Providers
 
 1. Create a new file in `src/assistants/`
 2. Implement the `Assistant` class with `chat()` and `chatStream()` methods
 3. Add the provider to the `Assistant` component dropdown
-4. Update the environment variables
+5. Update the environment variables
 
-Example:
-```javascript
-export class Assistant {
-  constructor(model = "your-model") {
-    // Initialize your AI client
-  }
 
-  async chat(content, history) {
-    // Implement non-streaming chat
-  }
-
-  async *chatStream(content, history) {
-    // Implement streaming chat
-  }
-}
-```
 
 ## 🎨 Customization
 
@@ -218,34 +140,4 @@ The project uses CSS Modules for styling. You can customize:
 - UI enhancements can be made to individual components
 - New AI providers can be integrated following the existing pattern
 
-## 🤝 Contributing
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- [React](https://reactjs.org/) - The web framework used
-- [Vite](https://vitejs.dev/) - The build tool
-- [Google AI](https://ai.google.dev/) - Gemini models
-- [OpenAI](https://openai.com/) - GPT models
-- [DeepSeek](https://deepseek.com/) - DeepSeek models
-- [Anthropic](https://anthropic.com/) - Claude models
-
-## 📞 Support
-
-If you encounter any issues or have questions:
-- Open an issue on GitHub
-- Check the existing issues for solutions
-- Review the documentation above
-
----
-
-**Made with ❤️ by [YASWANTHthottempudi](https://github.com/YASWANTHthottempudi)**
