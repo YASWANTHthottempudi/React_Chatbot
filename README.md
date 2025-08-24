@@ -9,7 +9,7 @@ A modern, feature-rich AI chatbot built with React that supports multiple AI pro
 
 ## 🌐 Live Demo
 
-**Try the chatbot live:** [https://resonant-sunshine-df41a9.netlify.app](https://resonant-sunshine-df41a9.netlify.app)
+**Try the chatbot live:** https://yaswanthfirstchatbot.netlify.app 
 
 ---
 
