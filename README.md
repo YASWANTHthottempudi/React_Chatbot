@@ -5,6 +5,13 @@ A modern, feature-rich AI chatbot built with React that supports multiple AI pro
 ![React AI Chatbot](https://img.shields.io/badge/React-18.3.1-blue?logo=react)
 ![Vite](https://img.shields.io/badge/Vite-7.1.3-purple?logo=vite)
 ![TypeScript](https://img.shields.io/badge/JavaScript-ES6+-yellow?logo=javascript)
+![Netlify](https://img.shields.io/badge/Netlify-Deployed-brightgreen?logo=netlify)
+
+## 🌐 Live Demo
+
+**Try the chatbot live:** [https://resonant-sunshine-df41a9.netlify.app](https://resonant-sunshine-df41a9.netlify.app)
+
+---
 
 ## ✨ Features
 
